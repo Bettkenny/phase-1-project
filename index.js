@@ -56,7 +56,21 @@ searchBtn.addEventListener("click",() =>{
 </div>
 `;
 let recipe = document.getElementById("recipe");
-let hideRecipe = document.getElementById
+let hideRecipe = document.getElementById("hide-recipe");
+let showRecipe = document.getElementById("show-recipe");
+let removeSlip= document.getElementById("remoeSlip");
+let payUp= document.getElementById("payUp");
+let purchaseForm = document.getElementById("purchase-form");
+let submitPurchase = document.getElementById("submit-purchase");
+
+submitPurchase.addEventListener("click", () =>{
+let name = document.getElementById("name").value;
+let order= document.getElementById("order").value;
+let email = document.getElementById("email").value;
+let address = document.getElementById("address").value;
+
+
+})
 })
 
     }
