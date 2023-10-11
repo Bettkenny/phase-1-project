@@ -92,9 +92,15 @@ hideRecipe.addEventListener("click", () => {
     recipe.style.display = "none";
 
 });
+showRecipe.addEventListener("click", () =>{
+    recipe.style.display = "block";
+});
 
 
 })
+.catch(() => {
+    result.innerHTML = '<h3>Invalid Input</h3>';
+});
 
     }
 }
