@@ -69,8 +69,31 @@ let order= document.getElementById("order").value;
 let email = document.getElementById("email").value;
 let address = document.getElementById("address").value;
 
+let receipt= document.getElementById("receipt");
+receipt.innerText = 'Name: ${name}\n Orderd plates: ${order}\nEmail: ${email}\nAddress: ${address}';
+payslip.style.display ="block";
 
-})
+document.getElementById("name").value="";
+document.getElementById("order").value="";
+document.getElementById("email").value="";
+document.getElementById("address").value="";
+
+});
+payUp.addEventListener("click",()=>{
+    purchaseForm.style.display="block";
+
+});
+removeSlip.addEventListener("click",()=>{
+    payslip.style.display="none";
+    alert("Thank You For Dining With Us!!!\n Your meal shall be with you shortly")
+
+});
+hideRecipe.addEventListener("click", () => {
+    recipe.style.display = "none";
+
+});
+
+
 })
 
     }
