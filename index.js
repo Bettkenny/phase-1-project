@@ -1,6 +1,6 @@
 
-const result = document.getElementById("result");
-const searchBtn = document .getElementById("search-btn");
+let result = document.getElementById("result");
+let searchBtn = document .getElementById("search-btn");
 let = ("https://www.themealdb.com/api/json/v1/1/search.php?s=");
 
 
@@ -55,6 +55,8 @@ searchBtn.addEventListener("click",() =>{
 <button id="submit-purchase">Submit</button>
 </div>
 `;
+let recipe = document.getElementById("recipe");
+let hideRecipe = document.getElementById
 })
 
     }
