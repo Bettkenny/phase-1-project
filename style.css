@@ -1,7 +1,7 @@
 
     body {
-background-color: rosybrown ;
-},
+background-color: rgb(245, 245, 245);
+}
 header{
     text-align: center;
     font-family: 'Bacasime Antique', serif;
@@ -9,7 +9,7 @@ header{
 
 
 * {
-    padding: 0;
+    padding: pc;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -207,7 +207,7 @@ header{
   
   #purchase-form button {
     background-color: #4CAF50;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     cursor: pointer;

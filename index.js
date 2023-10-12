@@ -1,14 +1,14 @@
-//Initial References
+
 let result = document.getElementById("result");
 let searchBtn = document.getElementById("search-btn");
 let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 
-//Event listener for the search button
+
 searchBtn.addEventListener("click", () => {
   let userInp = document.getElementById("user-search").value;
   if (userInp.length == 0) {
-    //To verify the search meal field is not empty
+    
     result.innerHTML = `<h3>Please enter a Meal to be served</h3>`;
   } else {
     fetch(url + userInp)
@@ -74,15 +74,13 @@ submitPurchase.addEventListener("click", () => {
   let email = document.getElementById("email").value;
   let address = document.getElementById("address").value;
 
-  // Perform actions with the purchase details
-
-  //Display receipt in the payslip section
+  
   let receipt = document.getElementById("receipt");
   receipt.innerText = `Name: ${name}\n Orderd plates: ${order}\nEmail: ${email}\nAddress: ${address}`;
   payslip.style.display = "block";
 
 
-  // Reset form fields
+  
   document.getElementById("name").value = "";
   document.getElementById("order").value = "";
   document.getElementById("email").value = "";
@@ -106,7 +104,7 @@ submitPurchase.addEventListener("click", () => {
   }
 });
 
-//Getting the food suggestions from a deployed db.json file
+
 function suggestFoods(){
   fetch('https://json-server-6ntd.onrender.com/foods')
   .then(res => res.json())
@@ -114,7 +112,7 @@ function suggestFoods(){
 }
 suggestFoods();
 
-//Dom for the suggested meals
+
 
 function mealSuggest(foodStuff) {
   let meals = document.getElementById('foods')
