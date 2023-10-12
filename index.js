@@ -4,29 +4,30 @@ let searchBtn = document .getElementById("search-btn");
 let url= ("https://www.themealdb.com/api/json/v1/1/search.php?s=");
 
 
-searchBtn.addEventListener("click",() =>{
-    let userInp = document.getElementById("user-search").value;
-    if(userInp.length == 0){
 
-    result.innerHTML = '<h3>Please enter a Meal to be served<h3>';
-    } else {
-        fetch(url + userInp)
-        .then((response) => response.json())
-        .then((data) => {
-            let myMeal = data.meals[0];
-            let count = 1;
-            let ingredients = [];
-            for (let i in myMeal){
-                let ingredients ="";
-                let measure = "";
-                if (i.startsWith("strIngredient" && myMeal[i])){
-                    ingredient= myMeal[i];
-                    measure= myMeal['strMeasure' + count];
-                    count += 1;
-                    ingredients.push('${measure} ${ingredient}');
-
-                }
-            }
+searchBtn.addEventListener("click", () => {
+  let userInp = document.getElementById("user-search").value;
+  if (userInp.length == 0) {
+    
+    result.innerHTML = `<h3>Please enter a Meal to be served</h3>`;
+  } else {
+    fetch(url + userInp)
+      .then((response) => response.json())
+      .then((data) => {
+        let myMeal = data.meals[0];
+        let count = 1;
+        let ingredients = [];
+        for (let i in myMeal) {
+          let ingredient = "";
+          let measure = "";
+          if (i.startsWith("strIngredient") && myMeal[i]) {
+            ingredient = myMeal[i];
+            measure = myMeal[`strMeasure` + count];
+            count += 1;
+            ingredients.push(`${measure} ${ingredient}`);
+          }
+        }
+        
             result.innerHTML = `
             <img src=${myMeal.strMealThumb}>
             <div class="details">
@@ -80,50 +81,48 @@ document.getElementById("order").value="";
 document.getElementById("email").value="";
 document.getElementById("address").value="";
 
-});
-payUp.addEventListener("click",()=>{
-    purchaseForm.style.display="block";
+}); 
+payUp.addEventListener("click", () => {
+    purchaseForm.style.display = "block";
+  });
 
-});
-removeSlip.addEventListener("click",()=>{
-    payslip.style.display="none";
-    alert("Thank You For Dining With Us!!!\n Your meal shall be with you shortly")
+  removeSlip.addEventListener("click", () => {
+    payslip.style.display = "none";
+    alert("Thank You for dining with Us!!!\n Your meal shall be with you shortly")
+  });
 
-});
-hideRecipe.addEventListener("click", () => {
+  hideRecipe.addEventListener("click", () => {
     recipe.style.display = "none";
-
-});
-showRecipe.addEventListener("click", () =>{
+  });
+  showRecipe.addEventListener("click", () => {
     recipe.style.display = "block";
-});
-
-
+  });
 })
 .catch(() => {
-    result.innerHTML = '<h3>Invalid Input</h3>';
+  result.innerHTML = `<h3>Invalid Input</h3>`;
+});
+}
 });
 
-    }
-}
-)
-function suggestFood(){
-    fetch('https://json-server-6ntd.onrender.com/foods ')
+
+function suggestFoods(){
+    fetch('https://json-server-6ntd.onrender.com/foods')
     .then(res => res.json())
-    .then(mov =>mealSuggest(mov))
-}
-suggestFoods();
+    .then(mov => mealSuggest(mov))
+  }
+  suggestFoods();
 
-function mealSuggest(foodStuff) {
-  let meals = document.getElementById('foods')
   
-  for(let dub of foodStuff){
-    let mealList = document.createElement('li')
+  function mealSuggest(foodStuff) {
+    let meals = document.getElementById('foods')
     
-    mealList.innerHTML = `<img src="${dub.image}">
-    <h3>${dub.name}</h3>
-    <p>Description: ${dub.description}</p>`;
-    meals.appendChild(mealList);
-  }                 
-
-}
+    for(let dub of foodStuff){
+      let mealList = document.createElement('li')
+      
+      mealList.innerHTML = `<img src="${dub.image}">
+      <h3>${dub.name}</h3>
+      <p>Description: ${dub.description}</p>`;
+      meals.appendChild(mealList);
+    }                 
+  
+  }
