@@ -1,14 +1,14 @@
 
 let result = document.getElementById("result");
 let searchBtn = document .getElementById("search-btn");
-let = ("https://www.themealdb.com/api/json/v1/1/search.php?s=");
+let url= ("https://www.themealdb.com/api/json/v1/1/search.php?s=");
 
 
 searchBtn.addEventListener("click",() =>{
-    let userInp = document.getElementById("user-search").ariaValueMax;
+    let userInp = document.getElementById("user-search").value;
     if(userInp.length == 0){
 
-        innerHTML = '<h3>Please enter a Meal to be served<h3>';
+    result.innerHTML = '<h3>Please enter a Meal to be served<h3>';
     } else {
         fetch(url + userInp)
         .then((response) => response.json())
@@ -21,7 +21,7 @@ searchBtn.addEventListener("click",() =>{
                 let measure = "";
                 if (i.startsWith("strIngredient" && myMeal[i])){
                     ingredient= myMeal[i];
-                    measure= myMeal['strMearure' + cunt];
+                    measure= myMeal['strMeasure' + count];
                     count += 1;
                     ingredients.push('${measure} ${ingredient}');
 
@@ -58,20 +58,22 @@ searchBtn.addEventListener("click",() =>{
 let recipe = document.getElementById("recipe");
 let hideRecipe = document.getElementById("hide-recipe");
 let showRecipe = document.getElementById("show-recipe");
-let removeSlip= document.getElementById("remoeSlip");
+let removeSlip= document.getElementById("removeSlip");
 let payUp= document.getElementById("payUp");
 let purchaseForm = document.getElementById("purchase-form");
 let submitPurchase = document.getElementById("submit-purchase");
 
-submitPurchase.addEventListener("click", () =>{
-let name = document.getElementById("name").value;
-let order= document.getElementById("order").value;
-let email = document.getElementById("email").value;
-let address = document.getElementById("address").value;
 
-let receipt= document.getElementById("receipt");
-receipt.innerText = 'Name: ${name}\n Orderd plates: ${order}\nEmail: ${email}\nAddress: ${address}';
-payslip.style.display ="block";
+submitPurchase.addEventListener("click", () => {
+    let name = document.getElementById("name").value;
+    let order = document.getElementById("order").value;
+    let email = document.getElementById("email").value;
+    let address = document.getElementById("address").value;
+
+ let receipt = document.getElementById("receipt");
+  receipt.innerText = `Name: ${name}\n Orderd plates: ${order}\nEmail: ${email}\nAddress: ${address}`;
+  payslip.style.display = "block";
+
 
 document.getElementById("name").value="";
 document.getElementById("order").value="";
