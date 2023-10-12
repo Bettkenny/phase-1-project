@@ -110,7 +110,7 @@ showRecipe.addEventListener("click", () =>{
 function suggestFood(){
     fetch('https://json-server-6ntd.onrender.com/foods ')
     .then(res => res.json())
-    .then(mov =>mealSugest(mov))
+    .then(mov =>mealSuggest(mov))
 }
 suggestFoods();
 
