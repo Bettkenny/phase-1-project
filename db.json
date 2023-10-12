@@ -1,82 +1,19 @@
-  {
-    "food":[
-  {
-    "id": 1,
-    "name": "Pizza",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/1024px-Pizza-3007395.jpg",
-    "description": "Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as various types of sausage, anchovies, mushrooms, onions, olives, vegetables, meat, ham, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven."
-  },
-  {
-    "id": 2,
-    "name": "Fish Pie",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Fish_Pie.jpg/800px-Fish_Pie.jpg",
-    "description": "The pie is usually made with fresh and smoked fish (for example cod, haddock, salmon or halibut) or seafood in a white sauce[1] or cheddar cheese sauce made using the milk the fish was poached in.[citation needed] Hard boiled eggs are a common additional ingredient.[citation needed] Parsley or chives are sometimes added to the sauce."
-  },
-  {
-    "id": 3,
-    "name": "Hum Burger",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hamburger_%28black_bg%29.jpg/1024px-Hamburger_%28black_bg%29.jpg",
-    "description": "A hamburger, or simply burger, is a food consisting of fillings—usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll. Hamburgers are often served with cheese, lettuce, tomato, onion, pickles, bacon, or chilis; condiments such as ketchup, mustard, mayonnaise, relish, or a 'special sauce', often a variation of Thousand Island dressing"
-  },
-  {
-    "id": 4,
-    "name": "Tacos",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/800px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg",
-    "description": "A taco is a traditional Mexican food consisting of a small hand-sized corn- or wheat-based tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand. A taco can be made with a variety of fillings, including beef, pork, chicken, seafood, beans, vegetables, and cheese, allowing for great versatility and variety."
-  },
-  {
-    "id": 5,
-    "name": "Gohan Rice",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Tamagokake-gohan.JPG/1024px-Tamagokake-gohan.JPG",
-    "description": "gohan is a dish in which a raw egg is put on top of or mixed with rice, or a recipe for such a dish.[1] Beaten eggs are sometimes used, as are non-beaten. Sometimes only the yolk of the egg is used."
-  },
-  {
-    "id": 6,
-    "name": "Chicken Soup",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Chicken_Noodle_Soup.jpg/800px-Chicken_Noodle_Soup.jpg",
-    "description": "Chicken soup is a soup made from chicken, simmered in water, usually with various other ingredients. The classic chicken soup consists of a clear chicken broth, often with pieces of chicken or vegetables"
-  },
-  {
-    "id": 7,
-    "name": "Bistek",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Bistek_Tagalog-02.jpg/800px-Bistek_Tagalog-02.jpg",
-    "description": "Bistek is a Filipino dish consisting of thinly-sliced beefsteak braised in soy sauce, calamansi juice, garlic, ground black pepper, and onions cut into rings. It is a common staple in the Tagalog and Western Visayan regions of the Philippines. It is eaten over white rice."
-  },
-  {
-    "id": 8,
-    "name": "Tortang Talong",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/EGGPLANT_TORTA.jpg/1024px-EGGPLANT_TORTA.jpg",
-    "description": "Tortang is an omelette or fritter from Filipino cuisine made by pan-frying grilled whole eggplants dipped in an egg mixture."
-  },
-  {
-    "id": 9,
-    "name": "Beef Asado",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Shortribsphoto.jpg/800px-Shortribsphoto.jpg",
-    "description": "An asado usually consists of beef, pork, chicken, chorizo, and morcilla, all of which are cooked using an open fire or a grill, called a parrilla. Usually, red wine and side dishes such as salads accompany the main meats."
-  },
-  {
-    "id": 10,
-    "name": "Crispy eggplant",
-    "image": "https://iheartvegetables.com/wp-content/uploads/2022/08/Crispy-eggplant-blog-size-15-of-15-680x1020.jpg",
-    "description": "This crispy eggplant can be made in the oven or the air fryer for a quick and delicious side dish! The simple seasonings add plenty of flavor and the breadcrumbs help create perfectly crispy eggplant."
-  },
-  {
-    "id": 11,
-    "name": "Beef Mechado",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Cooked_mechado.JPG/800px-Cooked_mechado.JPG",
-    "description": "the dish uses a Spanish culinary practice of threading strips of pork back-fat (the 'wicks') through thick cuts of inexpensive beef (specifically the chuck) to provide both succulence and flavor."
-  },
-  {
-    "id": 12,
-    "name": "Eggplant Adobo",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Chicken_adobo.jpg/800px-Chicken_adobo.jpg",
-    "description": "a popular Filipino dish and cooking process in Philippine cuisine that involves meat, seafood, or vegetables marinated in vinegar, soy sauce, garlic, bay leaves, and black peppercorns, which is browned in oil, and simmered in the marinade."
-  },
-  {
-    "id": 13,
-    "name": "Kung Po Prawns",
-    "image": "https://khinskitchen.com/wp-content/uploads/2022/05/kung-po-king-prawns-01.jpg",
-    "description": "Authentic Szechuan Chinese Style Kung Po King Prawn recipe made with jumbo king prawns, spicy, sweet, slightly sour, savoury delicious sauce. The taste of hotness and sweetness combined together in the sauce makes this dish so special."
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
-    ]
-  }
+}
