@@ -4,11 +4,11 @@ let searchBtn = document.getElementById("search-btn");
 let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 
-
+//event listener for serch button
 searchBtn.addEventListener("click", () => {
   let userInp = document.getElementById("user-search").value;
   if (userInp.length == 0) {
-    
+    //to collect details for meals including recipe
     result.innerHTML = `<h3>Please enter a Meal to be served</h3>`;
   } else {
     fetch(url + userInp)
@@ -27,7 +27,7 @@ searchBtn.addEventListener("click", () => {
             ingredients.push(`${measure} ${ingredient}`);
           }
         }
-        
+       //innerHTML for displaying what is in the search button 
 
         result.innerHTML = `
     <img src=${myMeal.strMealThumb}>
@@ -73,7 +73,7 @@ submitPurchase.addEventListener("click", () => {
   let order = document.getElementById("order").value;
   let email = document.getElementById("email").value;
   let address = document.getElementById("address").value;
-
+ //to show purchase details 
   
   let receipt = document.getElementById("receipt");
   receipt.innerText = `Name: ${name}\n Orderd plates: ${order}\nEmail: ${email}\nAddress: ${address}`;
@@ -104,7 +104,7 @@ submitPurchase.addEventListener("click", () => {
   }
 });
 
-
+//Getting the food Suggestions from a deployed db.json file
 function suggestFoods(){
   fetch('https://json-server-6ntd.onrender.com/foods')
   .then(res => res.json())
@@ -112,7 +112,7 @@ function suggestFoods(){
 }
 suggestFoods();
 
-
+// DOM for suggested meals 
 
 function mealSuggest(foodStuff) {
   let meals = document.getElementById('foods')
